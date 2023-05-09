@@ -17,13 +17,14 @@
             font-family: 'Nunito', sans-serif;
         }
 
-        main {
-            text-align: center;
-        }
-
         h1,
         h2 {
             color: red;
+            text-align: center
+        }
+
+        .list ul {
+            list-style: none;
         }
     </style>
 </head>
@@ -32,6 +33,17 @@
     <main>
         <h1>{{ $hello }}</h1>
         <h2>{{ $text }}</h2>
+
+        <div class="container">
+            <p>Visit our section!</p>
+            <div class="list">
+                <ul>
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li><a href="{{ route('about-us') }}">About-us</a></li>
+                    <li><a href="{{ route('shop') }}">Shop</a></li>
+                </ul>
+            </div>
+        </div>
     </main>
 
 </body>

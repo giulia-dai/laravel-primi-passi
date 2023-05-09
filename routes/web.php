@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
     $hello = "Hello World!";
     $text = "You are now using Laravel!";
 
@@ -23,4 +24,15 @@ Route::get('/', function () {
     ];
 
     return view('welcome', $data);
-});
+
+    // oppure:
+    //return view('welcome', compact('hello', 'text'));
+})->name('home');
+
+Route::get('about-us', function () {
+    return view('about-us', ['message' => "This is the about us section"]);
+})->name('about-us');
+
+Route::get('shop', function () {
+    return view('shop', ['shop_message' => "This is our shop section"]);
+})->name('shop');
