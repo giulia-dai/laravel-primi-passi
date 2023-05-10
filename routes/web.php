@@ -23,7 +23,7 @@ Route::get('/', function () {
         'text' => $text
     ];
 
-    return view('welcome', $data);
+    return view('home', $data);
 
     // oppure:
     //return view('welcome', compact('hello', 'text'));

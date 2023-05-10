@@ -35,7 +35,7 @@
         <h2>{{ $text }}</h2>
 
         <div class="container">
-            <p>Visit our section!</p>
+            <p>Visit our sections!</p>
             <div class="list">
                 <ul>
                     <li><a href="{{ route('home') }}">Home</a></li>
